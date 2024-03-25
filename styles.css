@@ -1,0 +1,19 @@
+/* || GLOBAL PROPERTIES */
+
+:root {
+	--color-1: #301534;
+	--color-2: #ad28eb;
+	--color-3: #f8eeff;
+	--color-4: #8b6990;
+	--color-5: #ffffff;
+
+	--ff-work-sans: "Work Sans", sans-serif;
+
+	--fw-1: 400;
+	--fw-2: 600;
+	--fw-3: 700;
+
+	--fs-1: 1rem;
+	--fs-2: 1.125rem;
+	--fs-3: 3.5rem;
+}
