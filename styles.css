@@ -67,6 +67,10 @@ body {
 	color: inherit;
 	font-weight: var(--fw-2);
 	line-height: 1.2;
+	background: none;
+	border: none;
+	text-align: left;
+	padding: 0;
 }
 
 .minus-plus {
@@ -98,7 +102,7 @@ article {
 	color: var(--color-4);
 	font-weight: var(--fw-1);
 	line-height: 1.5;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 	height: auto;
 	max-height: 150px;
 	overflow: hidden;

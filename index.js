@@ -12,22 +12,32 @@ const question = [
 	"How can I get help if I'm stuck on a challenge?",
 ]; */
 
-const answerEl = document.getElementById("answer-el");
-const questionEl = document.getElementById("question-el");
-const imgEl = document.getElementById("minus-el");
+const questionEl = document.querySelectorAll(".question-wraper");
+const imgEl = document.querySelectorAll(".minus-plus");
+const answerEl = document.querySelectorAll(".answer");
 let toggle = false;
 
 function showHideAnswer(image, answer) {
 	if (toggle) {
 		image.src = "images/icon-plus.svg";
 		answer.classList.toggle("invisible");
+		toggle = !toggle;
 	} else {
 		image.src = "images/icon-minus.svg";
 		answer.classList.toggle("invisible");
+		toggle = !toggle;
 	}
-	toggle = !toggle;
 }
 
-questionEl.addEventListener("click", function () {
-	showHideAnswer(imgEl, answerEl);
+questionEl[0].addEventListener("click", function () {
+	showHideAnswer(imgEl[0], answerEl[0]);
+});
+questionEl[1].addEventListener("click", function () {
+	showHideAnswer(imgEl[1], answerEl[1]);
+});
+questionEl[2].addEventListener("click", function () {
+	showHideAnswer(imgEl[2], answerEl[2]);
+});
+questionEl[3].addEventListener("click", function () {
+	showHideAnswer(imgEl[3], answerEl[3]);
 });
