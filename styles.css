@@ -25,7 +25,6 @@
 body {
 	background-image: url(images/background-pattern-mobile.svg);
 	background-repeat: no-repeat;
-	/* background-size: 375px 232px; */
 	background-size: contain;
 	background-color: var(--color-3);
 }
@@ -117,4 +116,55 @@ article {
 	overflow: hidden;
 	max-height: 0;
 	padding-top: 0px;
+}
+
+/* || MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+	body {
+		background-image: url(images/background-pattern-desktop.svg);
+	}
+
+	.card {
+		max-width: 600px;
+		margin: 167.5px auto;
+		border-radius: 16px;
+	}
+
+	.container {
+		padding: 40px;
+	}
+
+	.star {
+		margin-inline-end: 15.51px;
+		width: 43px;
+		height: 43px;
+	}
+
+	.title {
+		font-size: var(--fs-5);
+	}
+
+	.question {
+		font-size: var(--fs-3);
+	}
+
+	.first-question {
+		margin-top: 8px;
+		margin-bottom: 0px;
+	}
+
+	article {
+		margin-top: 24px;
+		padding-bottom: 24px;
+	}
+
+	.answer {
+		padding-top: 24px;
+		font-size: var(--fs-2);
+	}
+
+	.invisible {
+		padding-top: 0px;
+	}
 }
