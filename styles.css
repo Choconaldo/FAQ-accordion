@@ -63,13 +63,13 @@ body {
 .question {
 	font-family: var(--ff-work-sans);
 	font-size: var(--fs-2);
-	color: inherit;
 	font-weight: var(--fw-2);
 	line-height: 1.2;
 	background: none;
 	border: none;
 	text-align: left;
 	padding: 0;
+	color: inherit;
 }
 
 .minus-plus {
@@ -108,6 +108,11 @@ article {
 }
 
 .question-wraper:hover {
+	color: var(--color-2);
+	cursor: pointer;
+}
+
+.question:hover {
 	color: var(--color-2);
 	cursor: pointer;
 }
